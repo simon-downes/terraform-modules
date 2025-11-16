@@ -24,5 +24,13 @@ jobs:
           major-keywords: "major,breaking"
           default-first-tag: "0.1.0"
           use-version-prefix: false
-          hide-wiki-sections: "providers,modules,resources"
+          wiki-usage-template: |
+            ```hcl
+            module "{{module_name_terraform}}" {
+              source = "github.com/simon-downes/terraform-modules//{{module_name}}?ref={{ref}}"{{ref_comment}}
+
+              # See inputs below for additional required parameters
+            }
+            ```
+          hide-wiki-sections: "requirements,modules,resources"
 
