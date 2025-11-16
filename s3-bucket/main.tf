@@ -2,10 +2,10 @@
 resource "aws_s3_bucket" "this" {
   bucket = "${var.namespace}-${var.name}"
 
-  force_destroy        = var.force_destroy
-  object_lock_enabled =   false
+  force_destroy       = var.force_destroy
+  object_lock_enabled = false
 
-    tags = var.tags
+  tags = var.tags
 }
 
 resource "aws_s3_bucket_public_access_block" "this" {

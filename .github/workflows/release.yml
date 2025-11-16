@@ -18,10 +18,11 @@ jobs:
 
       - name: Terraform Module Releaser
         # uses: techpivot/terraform-module-releaser@v1
-        uses: simon-downes/terraform-module-releaser@feat/terraform-docs-config-support
+        uses: simon-downes/terraform-module-releaser@feat/hide-wiki-sections
         with:
           module-path-ignore: _*,**/modules/**,**/examples/**,**/tests/**
           major-keywords: "major,breaking"
           default-first-tag: "0.1.0"
           use-version-prefix: false
-          use-terraform-docs-config: true
+          hide-wiki-sections: "providers,modules,resources"
+
