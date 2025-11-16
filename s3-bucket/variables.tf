@@ -60,7 +60,3 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
-
-variable "test" {
-  type = string
-}
