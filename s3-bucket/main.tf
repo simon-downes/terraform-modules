@@ -2,7 +2,7 @@
 resource "aws_s3_bucket" "this" {
   bucket = "${var.namespace}-${var.name}"
 
-  force_destroy       = var.force_destroy
+  force_destroy        = var.force_destroy
   object_lock_enabled =   false
 
     tags = var.tags
