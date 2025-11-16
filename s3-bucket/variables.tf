@@ -4,7 +4,7 @@ variable "namespace" {
   type        = string
 
   validation {
-    condition     = can(regex("^[a-z0-9-]+$", var.name))
+    condition     = can(regex("^[a-z0-9-]+$", var.namespace))
     error_message = "Names must be lower-kebab-case"
   }
 }

@@ -4,7 +4,10 @@ A collection of _opinionated_ Terraform modules designed for simplicity.
 
 ## Naming Conventions
 
-All resource names are lower-kebab-case - this is enforced by variable validation.
+Most resource names are lower-kebab-case - this is enforced by variable validation.
+
+**Noteable Exceptions:**
+- Parameters and Secrets created via the [config](config/) module - the keys are used as-is
 
 ### Namespaces
 
