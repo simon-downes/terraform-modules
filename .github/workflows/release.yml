@@ -17,20 +17,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Terraform Module Releaser
-        # uses: techpivot/terraform-module-releaser@v1
-        uses: simon-downes/terraform-module-releaser@feat/hide-wiki-sections
+        uses: techpivot/terraform-module-releaser@v1
         with:
+          disable-wiki: true
           module-path-ignore: _*,**/modules/**,**/examples/**,**/tests/**
           major-keywords: "major,breaking"
           default-first-tag: "0.1.0"
           use-version-prefix: false
-          wiki-usage-template: |
-            ```hcl
-            module "{{module_name_terraform}}" {
-              source = "github.com/simon-downes/terraform-modules//{{module_name}}?ref={{ref}}"{{ref_comment}}
-
-              # See inputs below for additional required parameters
-            }
-            ```
-          hide-wiki-sections: "requirements,modules,resources"
-

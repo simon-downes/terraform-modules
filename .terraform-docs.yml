@@ -1,0 +1,17 @@
+formatter: "markdown table"
+
+sections:
+  show:
+    - providers
+    - inputs
+    - outputs
+
+output:
+  file: "README.md"
+
+sort:
+  by: required
+
+settings:
+  # render markdown formatting in variable and output descriptions
+  escape: false
