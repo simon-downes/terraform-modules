@@ -22,5 +22,5 @@ jobs:
           disable-wiki: true
           module-path-ignore: _*,**/modules/**,**/examples/**,**/tests/**
           major-keywords: "major,breaking"
-          default-first-tag: "0.1.0"
+          default-first-tag: "1.0.0"
           use-version-prefix: false
