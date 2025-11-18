@@ -82,7 +82,7 @@ resource "aws_secretsmanager_secret" "secrets" {
 
   name        = each.value.name
   description = each.value.description
-  kms_key_id  = var.kms_key_id
+  kms_key_id  = var.kms_key
   policy      = var.secrets_policy
 
   # set the recovery window to 0 so that we can immediately recreate a secret with the same name
