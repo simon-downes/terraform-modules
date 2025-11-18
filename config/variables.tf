@@ -52,7 +52,7 @@ variable "config" {
   }
 }
 
-variable "kms_key_id" {
+variable "kms_key" {
   description = "ARN or ID of KMS key used to encrypt secrets"
   type        = string
   default     = ""

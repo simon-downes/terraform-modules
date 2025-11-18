@@ -67,7 +67,7 @@ module "config" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_config"></a> [config](#input_config) | Map of config entries. Each value can be either:<br/>- a plain string (equivalent to [value, "string"])<br/>- or [value, type, (optional) description] where type is one of: `string`, `secure-string`, `secret` | `any` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input_namespace) | Namespace of resources. Must be lower-kebab-case. Will be prefixed to parameter and secret names | `string` | n/a | yes |
-| <a name="input_kms_key_id"></a> [kms_key_id](#input_kms_key_id) | ARN or ID of KMS key used to encrypt secrets | `string` | `""` | no |
+| <a name="input_kms_key"></a> [kms_key](#input_kms_key) | ARN or ID of KMS key used to encrypt secrets | `string` | `""` | no |
 | <a name="input_secrets_policy"></a> [secrets_policy](#input_secrets_policy) | Resource policy to attach to secrets | `string` | `""` | no |
 | <a name="input_tags"></a> [tags](#input_tags) | Tags to apply to resources | `map(string)` | `{}` | no |
 
